@@ -77,6 +77,21 @@ document.getElementById("love-points-btn").addEventListener("click", function() 
         document.getElementById("secret-message").classList.remove("hidden");
         alert("🎉 You clicked too much baby. Now suck my dick.");
     }
+
+    if (lovePoints === 13) {
+        document.getElementById("secret-message").classList.remove("hidden");
+        alert("Sayez khallas (continue).");
+    }
+
+    if (lovePoints === 17) {
+        document.getElementById("secret-message").classList.remove("hidden");
+        alert("You love me so much babyy!❤️");
+    }
+
+    if (lovePoints === 24) {
+        document.getElementById("secret-message").classList.remove("hidden");
+        alert("I love you too g!❤️");
+    }
 });
 
 

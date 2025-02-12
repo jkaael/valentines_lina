@@ -23,24 +23,23 @@ p {
     color: #d63447;
 }
 
-#thanks {
-    color: white
-}
-
 /* Gallery Wrapper */
 .gallery-wrapper {
     width: 300px; /* Adjust width as needed */
+    max-width: 90vw;
     height: 300px;
     overflow: hidden;
+    overflow-x: auto;
     position: relative;
     margin: 20px auto;
     border-radius: 10px;
+    white-space: nowrap;
 }
 
 /* Image container slides */
 .gallery-container {
     display: flex;
-    width: 500%; /* Enough space for all images */
+    width: max-content; /* Enough space for all images */
     animation: slideImages 20s infinite linear;
 }
 
@@ -55,6 +54,8 @@ p {
     transform: rotate(-2deg); /* Slight polaroid tilt */
     transition: transform 0.3s ease-in-out;
 }
+
+
 
 /* Add slight rotation effect */
 .gallery-item:nth-child(even) {
@@ -223,6 +224,10 @@ h2 {
     padding-top: 70px;
 }
 
+#thanks {
+    color: white
+}
+
 .love-letter {
     background: #ffe6e6;
     padding: 30px;
@@ -275,6 +280,7 @@ h2 {
     }
 }
 
+
 #progress-container {
     position: fixed;
     top: 0;
@@ -290,3 +296,4 @@ h2 {
     width: 0%;
     background: red;
 }
+

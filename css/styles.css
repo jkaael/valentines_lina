@@ -182,6 +182,7 @@ p {
 #love-points-btn:hover {
     background: red;
     color: white;
+    background-color: rgb(177, 47, 47);
 }
 
 #love-points-display {

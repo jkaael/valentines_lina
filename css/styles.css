@@ -183,16 +183,20 @@ p {
     background: red;
     color: white;
     background-color: rgb(177, 47, 47);
+    
 }
 
 #love-points-display {
     font-size: 18px;
     margin-top: 10px;
+    background-color: white;
+    
 }
+
 
 #secret-message {
     font-size: 22px;
-    background: gold;
+    background: rgb(226, 54, 132);
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;

@@ -68,7 +68,7 @@ p {
 }
 
 .video-section video {
-    width: 15%;
+    width: 20%;
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -244,3 +244,15 @@ h2 {
 
 }
 
+
+/* Si l'écran est inférieur à 600px */
+@media (max-width: 600px) {
+    .video-section video {
+        width: 45%;
+    }
+
+    iframe {
+        width: 90%;
+        height: 200px !important;
+    }
+}

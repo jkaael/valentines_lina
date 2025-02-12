@@ -26,20 +26,17 @@ p {
 /* Gallery Wrapper */
 .gallery-wrapper {
     width: 300px; /* Adjust width as needed */
-    max-width: 90vw;
     height: 300px;
     overflow: hidden;
-    overflow-x: auto;
     position: relative;
     margin: 20px auto;
     border-radius: 10px;
-    white-space: nowrap;
 }
 
 /* Image container slides */
 .gallery-container {
     display: flex;
-    width: max-content; /* Enough space for all images */
+    width: 500%; /* Enough space for all images */
     animation: slideImages 20s infinite linear;
 }
 
@@ -54,8 +51,6 @@ p {
     transform: rotate(-2deg); /* Slight polaroid tilt */
     transition: transform 0.3s ease-in-out;
 }
-
-
 
 /* Add slight rotation effect */
 .gallery-item:nth-child(even) {
@@ -276,7 +271,7 @@ h2 {
 
     .gallery-item {
         width: 10%;
-        height: 200px !important;
+        height: 20px !important;
     }
 }
 

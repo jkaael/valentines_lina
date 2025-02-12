@@ -1,13 +1,19 @@
-document.getElementById("music-btn").addEventListener("click", function() {
+// Background music play/pause
+document.getElementById("music-btn").addEventListener("click", function () {
     let music = document.getElementById("bg-music");
+    let nowPlayingText = document.getElementById("now-playing");
+
     if (music.paused) {
         music.play();
         this.textContent = "🔇 Stop Music";
+        nowPlayingText.classList.remove("hidden"); // Show "Now Playing..."
     } else {
         music.pause();
         this.textContent = "🎶 Play Our Song";
+        nowPlayingText.classList.add("hidden"); // Hide "Now Playing..."
     }
 });
+
 
 
 

@@ -142,4 +142,20 @@ window.addEventListener("scroll", function() {
     document.getElementById("progress-bar").style.width = progress + "%";
 });
 
+// Wait for the page to load
+document.addEventListener("DOMContentLoaded", function () {
+    let popup = document.getElementById("popup-overlay");
+    let enterBtn = document.getElementById("enter-btn");
+    let leaveBtn = document.getElementById("leave-btn");
 
+    // Hide the website content until the user confirms
+    document.body.style.overflow = "hidden";
+
+    // Enter button: Hide pop-up and show the website
+    enterBtn.addEventListener("click", function () {
+        popup.style.display = "none";
+        document.body.style.overflow = "auto"; // Allow scrolling
+    });
+
+    
+});

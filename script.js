@@ -85,7 +85,7 @@ document.getElementById("love-points-btn").addEventListener("click", function() 
 
     if (lovePoints === 17) {
         document.getElementById("secret-message").classList.remove("hidden");
-        alert("You love me so much babyy!❤️");
+        alert("Damn, you love me so much babyy!❤️");
     }
 
     if (lovePoints === 24) {

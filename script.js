@@ -135,5 +135,11 @@ function updateGallery() {
 // Auto-slide every 5 seconds
 setInterval(nextImage, 5000);
 
+window.addEventListener("scroll", function() {
+    let scrollTop = document.documentElement.scrollTop;
+    let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById("progress-bar").style.width = progress + "%";
+});
 
 

@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Valentine's Day ❤️</title>
     <link rel="stylesheet" href="css/styles.css">
+    
+
 </head>
 <body>
 
     <div id="progress-container">
         <div id="progress-bar"></div>
     </div>
+    
 
     <!-- Background Video -->
     <div class="video-background">
-        <video autoplay loop muted playsinline>
+        <video autoplay loop muted >
             <source src="TaVideoTabobine.mp4" type="video/mp4">
             
         </video>
@@ -41,16 +44,16 @@
         <h2>Memories together 📸</h2>
     
         
-        <div class="gallery-container">
-            <img src="photos/436312908_974581540638198_8302048029562490120_n.jpg" class="gallery-item" onclick="enlargeImage(this)">
-            <img src="photos/476277488_1134476614798414_8014232196524231859_n.jpg" class="gallery-item" onclick="enlargeImage(this)">
-            <img src="photos/449347701_1979642442467398_1106138914618849265_n.jpg" class="gallery-item" onclick="enlargeImage(this)">
-            <img src="photos/449368882_956848912881244_1425391144635524404_n.jpg" class="gallery-item" onclick="enlargeImage(this)">
-            <img src="photos/photo2.jpg" class="gallery-item" onclick="enlargeImage(this)">  
-            <img src="photos/449742773_1030927942040741_7337103718430043866_n.jpg" class="gallery-item" onclick="enlargeImage(this)">
-            <img src="photos/476426771_1141458240756860_8878542037338168974_n.jpg" class="gallery-item" onclick="enlargeImage(this)">
+        <div class="gallery-container" id="slideshow">
+            <img src="photos/436312908_974581540638198_8302048029562490120_n.jpg" class="gallery-item"  onclick="enlargeImage(this)">
+            <img src="photos/476277488_1134476614798414_8014232196524231859_n.jpg" class="gallery-item"  onclick="enlargeImage(this)">
+            <img src="photos/449347701_1979642442467398_1106138914618849265_n.jpg" class="gallery-item"  onclick="enlargeImage(this)">
+            <img src="photos/449368882_956848912881244_1425391144635524404_n.jpg" class="gallery-item"  onclick="enlargeImage(this)">
+            <img src="photos/photo2.jpg" class="gallery-item"  onclick="enlargeImage(this)">  
+            <img src="photos/449742773_1030927942040741_7337103718430043866_n.jpg" class="gallery-item"  onclick="enlargeImage(this)">
+            <img src="photos/476426771_1141458240756860_8878542037338168974_n.jpg" class="gallery-item"  onclick="enlargeImage(this)">
             <img src="photos/449342460_397344760018077_7711615262103052750_n.jpg" class="gallery-item" onclick="enlargeImage(this)">
-            <img src="photos/photo1.jpg" class="gallery-item" onclick="enlargeImage(this)"> 
+            <img src="photos/photo1.jpg" class="gallery-item"  onclick="enlargeImage(this)"> 
              
         </div>
     </section>
@@ -95,6 +98,11 @@
         </p>
     </section>
 
+    
+    
+
+    
+
     <section class="love-points-section">
         
         <h2>How much do you love me?! 💕</h2>
@@ -103,7 +111,7 @@
          <div id="secret-message" class="hidden">
          🎁 Keep clicking the Love Points!
         </div>
-        <h3 id=thanks> Hope you appreciate my work baby. :)</h3>
+        <h3 id="thanks"> Hope you appreciate my work baby. :)</h3>
         
        
     </section>

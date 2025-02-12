@@ -264,6 +264,15 @@ h2 {
         width: 90%;
         height: 200px !important;
     }
+
+    h1 {
+        font-size: smaller;
+    }
+
+    .gallery-item {
+        width: 10%;
+        height: 200px !important;
+    }
 }
 
 #progress-container {

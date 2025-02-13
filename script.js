@@ -165,3 +165,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
 });
+
+
+function updateLoveTimer() {
+    let startDate = new Date("2022-09-01T00:00:00"); // Start date
+    let now = new Date(); // Current date
+
+    let diff = now - startDate; // Time difference in milliseconds
+
+    let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    let minutes = Math.floor((diff / (1000 * 60)) % 60);
+    let seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+}
+
+// Update every second
+setInterval(updateLoveTimer, 1000);
+
+// Initialize timer on page load
+updateLoveTimer();

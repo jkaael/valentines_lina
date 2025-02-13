@@ -276,9 +276,6 @@ h2 {
    
 }
 
-.timer-container {
-
-}
 
 
 #progress-container {
@@ -393,4 +390,49 @@ h2 {
 .timer-box p {
     margin: 5px 0 0;
     font-size: 10px;
+}
+
+
+.love-message-form {
+    text-align: center;
+    background: #ffe0e9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.love-message-form h2 {
+    color: #d6336c;
+}
+
+.love-message-form input, 
+.love-message-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ff4d6d;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.love-message-form button {
+    background: #ff4d6d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.love-message-form button:hover {
+    background: #d6336c;
+}
+
+.hidden {
+    display: none;
 }

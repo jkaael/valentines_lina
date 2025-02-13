@@ -194,19 +194,32 @@ setInterval(updateLoveTimer, 1000);
 updateLoveTimer();
 
 
-document.getElementById("loveForm").addEventListener("submit", function(event) {
-    event.preventDefault();
 
-    let name = document.getElementById("name").value;
-    let message = document.getElementById("message").value;
 
-    let email = "jabirkael.fr@gmail.com"; // Replace with YOUR email
-    let subject = encodeURIComponent("Love Message from " + name);
-    let body = encodeURIComponent(message + "\n\nFrom: " + name);
+document.getElementById("loveForm").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Prevent page reload
 
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    let formData = new FormData(this);
 
-    // Show confirmation message
-    document.getElementById("confirmation").classList.remove("hidden");
-    this.reset();
+    // Replace 'your-formspree-endpoint' with your Formspree URL
+    let response = await fetch("https://formspree.io/f/xgvolqal", {
+        method: "POST",
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+
+    if (response.ok) {
+        document.getElementById("success-popup").classList.remove("hidden"); // Show popup
+        this.reset(); // Reset form
+    } else {
+        alert("Oops! Something went wrong. Try again later.");
+    }
 });
+
+// Close popup
+document.getElementById("close-popup").addEventListener("click", function() {
+    document.getElementById("success-popup").classList.add("hidden");
+});
+

@@ -91,7 +91,7 @@ document.getElementById("love-points-btn").addEventListener("click", function() 
 
     if (lovePoints === 17) {
         document.getElementById("secret-message").classList.remove("hidden");
-        alert("Damn, you love me so much babyy!❤️");
+        alert("You love me so much babyy!❤️");
     }
 
     if (lovePoints === 24) {
@@ -138,8 +138,9 @@ function updateGallery() {
     container.style.transform = `translateX(-${index * 300}px)`;
 }
 
-// Auto-slide every 5 seconds
-setInterval(nextImage, 5000);
+
+
+
 
 window.addEventListener("scroll", function() {
     let scrollTop = document.documentElement.scrollTop;
@@ -147,6 +148,7 @@ window.addEventListener("scroll", function() {
     let progress = (scrollTop / scrollHeight) * 100;
     document.getElementById("progress-bar").style.width = progress + "%";
 });
+
 
 // Wait for the page to load
 document.addEventListener("DOMContentLoaded", function () {
@@ -165,6 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
 });
+
 
 
 function updateLoveTimer() {
@@ -189,3 +192,21 @@ setInterval(updateLoveTimer, 1000);
 
 // Initialize timer on page load
 updateLoveTimer();
+
+
+document.getElementById("loveForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let message = document.getElementById("message").value;
+
+    let email = "jabirkael.fr@gmail.com"; // Replace with YOUR email
+    let subject = encodeURIComponent("Love Message from " + name);
+    let body = encodeURIComponent(message + "\n\nFrom: " + name);
+
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+
+    // Show confirmation message
+    document.getElementById("confirmation").classList.remove("hidden");
+    this.reset();
+});

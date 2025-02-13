@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function updateLoveTimer() {
-    let startDate = new Date("2022-09-01T00:00:00"); // Start date
+    let startDate = new Date("2022-09-02T00:00:00"); // Start date
     let now = new Date(); // Current date
 
     let diff = now - startDate; // Time difference in milliseconds

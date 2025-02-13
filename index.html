@@ -10,7 +10,7 @@
 </head>
 <body>
 
-     <!-- Pop-Up Overlay -->
+    <!-- Pop-Up Overlay -->
 <div id="popup-overlay">
     <div id="popup-box">
         <h2 class="pop">💖 Hii hayati!!! 💖</h2>
@@ -20,6 +20,7 @@
         <button id="enter-btn">Yes, Show Me! ❤️</button>
     </div>
 </div>
+
 
     <div id="progress-container">
         <div id="progress-bar"></div>
@@ -43,7 +44,8 @@
     </header>
 
     <button id="music-btn">🎶 Play Our Song</button>
-    <p id="now-playing" class="hidden">Now Playing: Just the Two of Us by - Grover Washington, Jr 🎵</p>
+<p id="now-playing" class="hidden">Now Playing: Just the Two of Us by - Grover Washington, Jr 🎵</p>
+
 
     <section class="video-section">
         
@@ -74,9 +76,11 @@
             </div>
         </div>
     </section>
+    
+
+    
 
     <section class="gallery">
-        
         <h2>Memories together 📸</h2>
     
         
@@ -90,6 +94,7 @@
             <img src="photos/476426771_1141458240756860_8878542037338168974_n.jpg" class="gallery-item"  onclick="enlargeImage(this)">
             <img src="photos/449342460_397344760018077_7711615262103052750_n.jpg" class="gallery-item" onclick="enlargeImage(this)">
             <img src="photos/photo1.jpg" class="gallery-item"  onclick="enlargeImage(this)"> 
+            
              
         </div>
     </section>
@@ -132,16 +137,24 @@
             I love you more than words can say, and I always will.  
             You mean a lot to me bitch, please stay.❤️
         </p>
+
+        <form id="loveForm" class="love-message-form">
+            <p>Write a message to reply:</p>
+            <label for="name">From:</label>
+        <input type="text" id="name" name="name" required>
+    
+            <label for="message">Message:  </label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">💖 Send Message</button>
+        </form>
     </section>
 
-    
-    
-
-    
 
     <section class="love-points-section">
         
         <h2>How much do you love me?! 💕</h2>
+        
         <button id="love-points-btn">❤️ Click for Love Points</button>
         <p id="love-points-display">Love Points: 0</p>
          <div id="secret-message" class="hidden">
@@ -151,6 +164,7 @@
         
        
     </section>
+    
     
 
    
